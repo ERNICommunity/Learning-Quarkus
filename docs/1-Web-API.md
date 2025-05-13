@@ -26,8 +26,7 @@ Since Quarkus relies on JAX-RS definitions, all usual annotations can be used. E
 | `@QueryParam`           | Binds a method parameter to a query string parameter.                                        |
 | `@DefaultValue`         | Specifies a default value for a parameter if it is not provided in the request.              |
 
-> TASK 1.1
-> 
+### TASK (1.1)
 > Create a JAX-RS resource on the path `/messages` for the following POJO:
 > ```java
 > public static class Message {
@@ -63,8 +62,7 @@ public String postGreeting(@Valid @NotNull String message) {
 }
 ```
 
-> TASK 1.2
-> 
+### TASK (1.2)
 > Validate the POST body as follows:
 > - id should be >= 0 (use @Min)
 > - message should not be blank (use @NotBlank) and between 2 and 10 symbols (use @Size)

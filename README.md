@@ -26,3 +26,4 @@ For a brief comparison to Spring Boot, have a look at [Quarkus vs Spring Boot](d
 Go through the following "chapters". Each describes a typical use case and corresponding tasks to solve.
 1. [Getting Started with Quarkus](docs/0-Getting-Started.md)
 2. [Building a Web API](docs/1-Web-API.md)
+3. [Dependency Injection](docs/2-Dependency-Injection.md)

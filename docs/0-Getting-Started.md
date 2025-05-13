@@ -26,8 +26,7 @@ You can run your application in dev mode that enables live coding using the Mvn 
 quarkus dev
 ```
 
->TASK 0
->
+### TASK (0)
 > Optional: Create your own project stub.
 >
 > Start the app in development mode and verify the call http://localhost:8080/hello.

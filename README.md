@@ -20,8 +20,9 @@ While Quarkus is built and is relying on a reactive framework ([Vert.x](https://
 to be reactive as well.
 For more infos, see https://quarkus.io/versatility/.
 
-## How to use this repository
+For a brief comparison to Spring Boot, have a look at [Quarkus vs Spring Boot](docs/Quarkus-vs-SpringBoot.md).
 
-1. [Quarkus vs Spring Boot](docs/Quarkus-vs-SpringBoot.md)
-2. [Getting Started with Quarkus](docs/0-Getting-Started.md)
-3. [Building a Web API with Dependency Injection](docs/1-Web-API.md)
+## How to use this repository
+Go through the following "chapters". Each describes a typical use case and corresponding tasks to solve.
+1. [Getting Started with Quarkus](docs/0-Getting-Started.md)
+2. [Building a Web API](docs/1-Web-API.md)

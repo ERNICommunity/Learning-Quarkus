@@ -1,62 +1,27 @@
-# learning-quarkus
+# Learning Quarkus
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+## What's Quarkus?
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+[Quarkus](https://quarkus.io/) is a Kubernetes-native Java framework designed for building cloud-native applications.
+It optimizes Java specifically for containers and provides features that enhance the development experience.
 
-## Running the application in dev mode
+Quarkus focuses on topics like
 
-You can run your application in dev mode that enables live coding using:
+- fast startup time
+- low memory footprint
+- developer experience with features like live reloading
+- an [extension ecosystem](https://quarkus.io/extensions/) for integrating other frameworks
+- GraalVM support for native image generation
 
-```shell script
-./mvnw quarkus:dev
-```
+Quarkus tries to stay out of your way and relies on existing standards and frameworks.
+It doesn't require developers to learn quarkus specific code except for specific things.
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+While Quarkus is built and is relying on a reactive framework ([Vert.x](https://vertx.io)), it does not require the code
+to be reactive as well.
+For more infos, see https://quarkus.io/versatility/.
 
-## Packaging and running the application
+## How to use this repository
 
-The application can be packaged using:
-
-```shell script
-./mvnw package
-```
-
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/learning-quarkus-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
-
-## Provided Code
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+1. [Quarkus vs Spring Boot](docs/Quarkus-vs-SpringBoot.md)
+2. [Getting Started with Quarkus](docs/0-Getting-Started.md)
+3. [Building a Web API with Dependency Injection](docs/1-Web-API.md)

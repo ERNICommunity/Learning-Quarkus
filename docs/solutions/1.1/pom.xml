@@ -1,0 +1,5 @@
+<!-- add this as dependency -->
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-rest-jackson</artifactId>
+</dependency>

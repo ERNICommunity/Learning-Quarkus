@@ -23,7 +23,11 @@ For more infos, see https://quarkus.io/versatility/.
 For a brief comparison to Spring Boot, have a look at [Quarkus vs Spring Boot](docs/Quarkus-vs-SpringBoot.md).
 
 ## How to use this repository
+
 Go through the following "chapters". Each describes a typical use case and corresponding tasks to solve.
-1. [Getting Started with Quarkus](docs/0-Getting-Started.md)
-2. [Building a Web API](docs/1-Web-API.md)
-3. [Dependency Injection](docs/2-Dependency-Injection.md)
+
+1. [Getting Started with Quarkus](docs/1-Getting-Started.md)
+2. [Building a Web API](docs/2-Web-API.md)
+3. [Dependency Injection](docs/3-Dependency-Injection.md)
+4. [Configuration](docs/4-Configuring-Quarkus.md)
+5. [Database Connections](docs/5-Databases.md)

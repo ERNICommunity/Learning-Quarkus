@@ -39,7 +39,7 @@ Since Quarkus relies on JAX-RS definitions, all usual annotations can be used. E
 > - POST to create a message (respond with 201)
 > - DELETE to delete a message by id.
 > Ignore any persistence and store created messages in an in memory collection of your choice.
-> Solution: [./solutions/1.1](./solutions/1.1)
+> Solution: [./solutions/1.1](solutions/2.1)
 
 ## Validation
 Quarkus suggests Hibernate Validator for validating inputs.

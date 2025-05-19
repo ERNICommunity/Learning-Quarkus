@@ -31,3 +31,4 @@ Go through the following "chapters". Each describes a typical use case and corre
 3. [Dependency Injection](docs/3-Dependency-Injection.md)
 4. [Configuration](docs/4-Configuring-Quarkus.md)
 5. [Database Connections](docs/5-Databases.md)
+6. [Testing](docs/6-Testing.md)

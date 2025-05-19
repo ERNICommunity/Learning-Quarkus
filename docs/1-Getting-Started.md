@@ -26,6 +26,8 @@ You can run your application in dev mode that enables live coding using the Mvn 
 quarkus dev
 ```
 
+The Quarkus app starts in the terminal and allows for interaction while running. 
+
 ### TASK (0)
 > Optional: Create your own project stub.
 >

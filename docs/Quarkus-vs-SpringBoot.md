@@ -82,7 +82,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class GreetingController {
     @Autowired
-    private final GreetingService greetingService;
+    private GreetingService greetingService;
 
     @GetMapping
     public String greet() {
@@ -94,6 +94,10 @@ public class GreetingController {
 ### Quarkus
 
 Uses CDI (Contexts and Dependency Injection) as defined by Jakarta EE, with extensions for build-time enhancement.
+
+For migrating to Quarkus, it provides support for
+using [Spring Web](https://quarkus.io/guides/spring-web), [Spring DI](https://quarkus.io/guides/spring-web), [Spring Data](https://quarkus.io/guides/spring-data-jpa)
+and various [other extensions and guides](https://quarkus.io/guides/#q=spring).
 
 ```java
 import javax.enterprise.context.ApplicationScoped;
@@ -143,3 +147,8 @@ public class GreetingResource {
 | **Response Status**           | `@ResponseStatus`          | `Response.status()` in method      |
 
 ## Databases
+
+Both frameworks fully support JDBC and JPA as well as reactive DB clients.
+
+Quarkus provides similar simplified access as the Spring Data project via Panache. Either via active records or
+repositories. See [Section 5](5-Databases.md).

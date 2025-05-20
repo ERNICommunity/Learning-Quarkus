@@ -2,7 +2,8 @@
 
 Quarkus provides a flexible and powerful configuration system that allows you to customize various aspects of your
 application.
-Configuration can be passed as environment variables or using [application.properties](../src/main/resources/application.properties).
+Configuration can be passed as environment variables or
+using [application.properties](../src/main/resources/application.properties).
 
 In case the configuration is wanted in `yaml` format, see
 [YAML configuration guide](https://quarkus.io/guides/config-yaml).
@@ -34,6 +35,30 @@ Quarkus allows
 
 See the [Configuration Reference Guide](https://quarkus.io/guides/config-reference) for a detailed description.
 
-> Note: Some Quarkus configurations only take effect during build time, meaning it is not possible to change them at runtime.
+> Note: Some Quarkus configurations only take effect during build time, meaning it is not possible to change them at
+> runtime.
 > See [here](https://quarkus.io/guides/config-reference#build-time-configuration) for more information.
 
+## Configuration Profiles
+
+Different configuration profiles can be provided either collectively in the `application.properties` or in separated
+`application-<profile>.properties` files.
+
+```properties
+# within application.properties
+%dev.quarkus.http.port=3000
+# as separate application-dev.properties file
+quarkus.http.port=3000
+```
+
+## Injecting Properties
+
+To access properties in your code, injection via `@org.eclipse.microprofile.config.inject.ConfigProperty` can be used.
+
+```java
+
+@ConfigProperty(name = "erni.custom")
+String prop;
+```
+
+[Programmatic access](https://quarkus.io/guides/config-reference#programmatically-access) is possible as well.

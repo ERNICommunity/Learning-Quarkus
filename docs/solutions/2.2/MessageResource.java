@@ -1,12 +1,3 @@
-package org.erni.quarkus;
-
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.*;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.Response;
-
-import java.util.*;
-
 @Path("/messages")
 public class MessageResource {
 

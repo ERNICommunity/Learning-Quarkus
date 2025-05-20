@@ -54,7 +54,7 @@ Quarkus chooses a random port on your machine to bind to the database connection
 ### TASK 5.1
 
 > Add the quarkus-jdbc-postgresql extension to the project and make sure to have docker running.
-> Configure the datasource of the devservices to listen for port 9999 with `quarkus.datasource.devservices.port=9999`.
+> Configure the datasource of the devservices to listen for port 5432 with `quarkus.datasource.devservices.port=5432`.
 >
 > Observe the logs for a line like
 > ```

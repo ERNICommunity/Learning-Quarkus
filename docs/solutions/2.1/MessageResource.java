@@ -1,10 +1,3 @@
-package org.erni.quarkus;
-
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.Response;
-
-import java.util.*;
-
 @Path("/messages")
 public class MessageResource {
 

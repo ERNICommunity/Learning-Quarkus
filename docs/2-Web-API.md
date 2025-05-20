@@ -11,6 +11,8 @@ To add extensions, either just add the dependency to the pom manually or use eit
 quarkus ext add io.quarkus:quarkus-rest-jackson
 ```
 
+See the [REST guide](https://quarkus.io/guides/rest) for more detailed information.
+
 # Defining endpoints
 Since Quarkus relies on JAX-RS definitions, all usual annotations can be used. Excerpt:
 

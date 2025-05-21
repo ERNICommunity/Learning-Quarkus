@@ -1,4 +1,4 @@
-# Connecting To External Datasources
+# Databases
 
 Quarkus supports jdbc and reactive clients with the `quarkus-jdbc-*` and `quarkus-reactive-*-client` extensions.
 [JDBC extensions](https://quarkus.io/guides/datasource#configure-a-jdbc-datasource) exist for all established databases
@@ -25,7 +25,6 @@ the [reference](https://quarkus.io/guides/datasource#datasource-reference).
 URL patterns for the various databases can be found [here](https://quarkus.io/guides/datasource#jdbc-url).
 
 The most common ones to be used will probably be
-
 ```properties
 # can be omitted if only one driver extension is added
 quarkus.datasource.db-kind=pgsql

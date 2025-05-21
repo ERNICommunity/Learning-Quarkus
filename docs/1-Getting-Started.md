@@ -1,4 +1,4 @@
-## Getting started
+# Getting started
 
 Quarkus projects can be created via the Quarkus CLI, the quarkus maven plugin or https://code.quarkus.io.
 
@@ -14,7 +14,7 @@ quarkus create app org.erni.quarkus:learning-quarkus
 mvn io.quarkus.platform:quarkus-maven-plugin:3.22.2:create "-DprojectGroupId=org.erni.quarkus" "-DprojectArtifactId=learning-quarkus"
 ```
 
-### Running the application in dev mode
+## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using the Mvn wrapper or Quarkus CLI:
 
@@ -28,50 +28,8 @@ quarkus dev
 
 The Quarkus app starts in the terminal and allows for interaction while running. 
 
-### TASK (0)
+### TASK
 > Optional: Create your own project stub.
 >
 > Start the app in development mode and verify the call http://localhost:8080/hello.
 > Change the response content and observe it taking effect.
-
-
-### Packaging and running the application
-
-The application can be packaged using:
-
-```
-./mvnw package
-```
-
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory and is runnable via
-`java -jar .\target\quarkus-app\quarkus-run.jar`.
-
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-> **Note:** To run the application in a docker container, the whole `target/quarkus-app` needs to be copied over.
-
-Alternatively a _über-jar_ can be created (includes all dependencies) by executing the following command:
-
-```
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-It includes all dependencies and is now runnable using `java -jar target/learning-quarkus-1.0.0-SNAPSHOT-runner.jar`.
-
-#### Creating a native executable
-
-You can create a native executable using:
-
-```
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/learning-quarkus-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.

@@ -43,7 +43,7 @@ public class GreetingServiceTest {
 }
 ```
 
-## TASK 6.1
+### TASK 6.1
 
 > Start the Quarkus test mode in your terminal and add the test without Mockito above. Observe Quarkus executing it.
 > Change the code and observe Quarkus rerunning the tests.
@@ -73,7 +73,7 @@ quarkus...
 > When providing `*.properties` files in the `test/resources` folder, an `application.properties` file is required. Even
 > if it's left empty.
 
-## TASK 6.2
+### TASK 6.2
 
 > Add a new @QuarkusTest called `PropertyTest`. Define a property in the _regular_ `application.properties`
 `erni.custom=main`.
@@ -147,7 +147,7 @@ public class MockGreetingService extends GreetingService {
 }
 ```
 
-## TASK 6.3
+### TASK 6.3
 
 > Append the assertions in the existing `GreetingResourceTest` with asserting the body by
 `.body(Matchers.equalTo("Hello from Quarkus REST"))`.

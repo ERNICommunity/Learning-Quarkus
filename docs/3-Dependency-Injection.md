@@ -32,7 +32,7 @@ public class TargetBean {
     }
 }
 ```
-## TASK (2.1)
+### TASK 3.1
 > Extend the existing `GreetingResource` with an injected `GreetingService`.
 > Annotate the resource and service accordingly. Verify that everything works as before.
 > 

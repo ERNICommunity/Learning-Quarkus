@@ -1,4 +1,4 @@
-# Configuring Quarkus
+# Configurations
 
 Quarkus provides a flexible and powerful configuration system that allows you to customize various aspects of your
 application.
@@ -56,7 +56,6 @@ quarkus.http.port=3000
 To access properties in your code, injection via `@org.eclipse.microprofile.config.inject.ConfigProperty` can be used.
 
 ```java
-
 @ConfigProperty(name = "erni.custom")
 String prop;
 ```

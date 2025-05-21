@@ -2,7 +2,7 @@
 public class GreetingResourceTest {
     @Test
     public void testGreetingResource() {
-        given()
+        RestAssured.given()
                 .when().get("/hello")
                 .then()
                 .statusCode(200)

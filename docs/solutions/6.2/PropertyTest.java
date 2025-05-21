@@ -5,6 +5,6 @@ public class PropertyTest {
 
     @Test
     public void testProperty() {
-        assertEquals("main", prop);
+        Assertions.assertEquals("main", prop);
     }
 }

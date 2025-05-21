@@ -208,11 +208,11 @@ After adding the dependency, mocks can be activated using the `PanacheMock.mock(
 @Test
 public void mockEntity() {
     PanacheMock.mock(MessageResource.Message.class);
-    when(MessageResource.Message.count())
+    Mockito.when(MessageResource.Message.count())
             .thenReturn(5L);
 
-    assertEquals(5, MessageResource.Message.count());
-    assertTrue(MessageResource.Message.listAll().isEmpty());
+    Assertions.assertEquals(5, MessageResource.Message.count());
+    Assertions.assertTrue(MessageResource.Message.listAll().isEmpty());
 }
 ```
 

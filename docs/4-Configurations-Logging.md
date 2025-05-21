@@ -61,3 +61,27 @@ String prop;
 ```
 
 [Programmatic access](https://quarkus.io/guides/config-reference#programmatically-access) is possible as well.
+
+# Logging
+
+Quarkus relies on the JBoss Logging API. To declare a logger, simply use the API:
+```java
+import org.jboss.logging.Logger;
+private static final Logger log =  Logger.getLogger(MyService.class);
+```
+
+Quarkus simplifies this by providing the `io.quarkus.logging.Log` interface.
+Simply use the `Log` class to add logging statements and Quarkus adds a JBoss logger field at build time.
+```java
+public void doSomething() {
+  io.quarkus.logging.Log.info("Simple!"); 
+}
+```
+
+> **Note:**
+> 
+> For extension development, using the JBoss API is required.
+
+Logging behaviour can be configured with the `quarkus.log.*` properties.
+
+For more in depth information, see the [Logging Guide](https://quarkus.io/guides/logging).

@@ -70,3 +70,12 @@ public String postGreeting(@Valid @NotNull String message) {
 > - message should not be blank (use @NotBlank) and between 2 and 10 symbols (use @Size)
 > 
 > Validate the path parameter of the delete method to be >= 0
+
+## OpenAPI Support
+
+To add OpenAPI support to your application, simply add the `quarkus-smallrye-openapi` extension.
+It recognizes all resources and models and provides an OpenAPI endpoint at `/q/openapi`.
+Swagger UI is available under `/q/swagger-ui`.
+
+The definitions can be extended further manually.
+For more information, see the [guide](https://quarkus.io/guides/openapi-swaggerui).

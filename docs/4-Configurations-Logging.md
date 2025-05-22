@@ -51,6 +51,21 @@ Different configuration profiles can be provided either collectively in the `app
 quarkus.http.port=3000
 ```
 
+## Providing And Overriding Properties At Runtime
+
+When starting the jar or deploying the application, it is often useful to provide or override properties.
+Quarkus accepts properties through environment variables in upper snake case.
+A common hierarchy of property sources exists, see [here](https://quarkus.io/guides/config-reference#configuration-sources).
+
+```properties
+# activate profile(s)
+QUARKUS_PROFILE=dev,dev2
+# overriding the quarkus.http.port property
+QUARKUS_HTTP_PORT=3001
+# overriding profile specific variable %dev.quarkus.http.port
+_DEV_QUARKUS_HTTP_PORT=3001
+```
+
 ## Injecting Properties
 
 To access properties in your code, injection via `@org.eclipse.microprofile.config.inject.ConfigProperty` can be used.
@@ -78,9 +93,7 @@ public void doSomething() {
 }
 ```
 
-> **Note:**
-> 
-> For extension development, using the JBoss API is required.
+> **Note:** For extension development, using the JBoss API is required.
 
 Logging behaviour can be configured with the `quarkus.log.*` properties.
 

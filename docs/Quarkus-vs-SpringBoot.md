@@ -40,6 +40,14 @@ It's better suited for serverless or scaling microservices.
 
 ## Startup Time, Memory Usage And Dependency Injection
 
+Some observed behaviour on a local machine:
+
+| Variant        | Startup Time  | Memory  | Docker Image |
+|----------------|---------------|---------|--------------|
+| quarkus-jvm    | ~3.5 seconds  | ~240 MB | ~700 MB      |
+| quarkus-native | ~0.15 seconds | ~20 MB  | ~270 MB      |            
+| spring-boot    | ~8 seconds    | ~330 MB | ~590 MB      |
+
 ### Spring Boot
 
 Uses runtime reflection and classpath scanning, which makes it heavier at startup and higher in memory use.
